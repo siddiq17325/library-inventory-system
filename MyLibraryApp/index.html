@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!--
+	Steven Yen, 2018
+	Personal Library App
+	Stores my books in a MySQL database. 
+-->
+
+<html>
+<head>
+    <title>My Personal Library</title>
+	
+	<style>
+		div {color: green;}
+		h2 {color: green;}
+	</style>
+
+</head>
+
+<body>
+    <h1>My Personal Library</h1>
+	Click on the buttons below to get the results for each request.
+	<hr>
+	
+<!--GET Request-->
+	GET Request: Get all books in library :&nbsp
+	<button id="req1-button">List all items</button>
+	<hr>
+
+<!--PUT Request-->    
+	PUT Request: update the status/notes of a book:<br>
+	<form id="req2-form">
+		Title: &nbsp <input type="text" id="req2-input-title" placeholder="title" onfocus="this.placeholder=''"> &nbsp<br>
+		Status/Notes: &nbsp <input type="text" id="req2-input-notes" placeholder="status" onfocus="this.placeholder=''"> &nbsp<br>
+		<button>Update</button>
+	</form>
+	<hr>
+
+<!--DELETE Request-->    
+	DELETE Request: Delete specified book from database:<br>
+	<form id="req3-form">
+		Title: &nbsp <input type="text" id="req3-input-title" placeholder="title" onfocus="this.placeholder=''"> &nbsp<br>
+		<button>Delete Item</button>
+	</form>
+	<hr>
+
+<!--POST Request-->    
+	POST Request: Add new book to the database:<br>
+	<form id="req4-form">
+		Author: &nbsp <input type="text" id="req4-input-author" placeholder="author" onfocus="this.placeholder=''"> &nbsp<br>
+		Title: &nbsp <input type="text" id="req4-input-title" placeholder="title" onfocus="this.placeholder=''"> &nbsp<br>
+		Type: &nbsp <input type="text" id="req4-input-type" placeholder="type" onfocus="this.placeholder=''"> &nbsp<br>
+		Year: &nbsp <input type="text" id="req4-input-year" placeholder="year" onfocus="this.placeholder=''"> &nbsp<br>
+		Notes/Status: &nbsp <input type="text" id="req4-input-notes" placeholder="notes" onfocus="this.placeholder=''"><br>
+		<button>Add new book</button>
+	</form>
+	<hr>
+		
+	<h2>REQEUSTED RESULTS</h2>
+	
+	<!--This is the common results section to display content sent by server-->
+	<div id="resultsDiv"></div>
+
+	
+	<!--Client side scripts used by the page -->
+	<script src="jquery.js"></script>
+	<script src="script_sy.js"></script> 
+    
+</body>
+</html>
