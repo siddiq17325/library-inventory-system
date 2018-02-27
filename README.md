@@ -10,7 +10,7 @@ Full Stack Library Inventory System using MySQL, Node.js, Express.js, and JQuery
       <li>Reviewing all books in the library (GET)</li>
       <li>Update the status of a specific book (PUT)</li>
       <li>Delete a book from the library (DELETE)</li>
-      <li>Add a new book to the library</li>
+      <li>Add a new book to the library (POST)</li>
     </ul>
   </li>
 </ul>
